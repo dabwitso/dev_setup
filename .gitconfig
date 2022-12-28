@@ -1,0 +1,25 @@
+[user]
+	email = pc@gmail.com
+	name = pc
+[core]
+	editor = vim
+	autocrlf = input
+[alias]
+	lg = log --pretty=format:'%Cred%h%Cgreen [%an]%Creset: %cd -> %Cblue%s' --date=short
+	unstage = restore --staged .
+	uncommit = reset HEAD~1
+[credential]
+	helper = store
+[mergetool "p4merge"]
+	path = /usr/local/bin/p4merge
+[diff]
+	tool = p4merge
+[difftool "p4merge"]
+	path = /usr/local/bin/p4merge
+[difftool]
+	prompt = false
+[merge]
+	tool = p4merge
+[mergetool]
+	prompt = false
+	keepBackup = false
